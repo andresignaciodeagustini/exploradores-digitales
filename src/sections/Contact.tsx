@@ -2,7 +2,7 @@ import contactMail from "../assets/contact-mail.png";
 import contactEmail from "../assets/contact-email.png";
 import contactInstagram from "../assets/contact-instagram.png";
 import sendIcon from "../assets/send-icon.png";
-import "../styles/contact.css";
+import "../styles/Contact.css";
 
 function Contact() {
   return (

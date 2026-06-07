@@ -1,4 +1,4 @@
-import "../styles/footer.css";
+import "../styles/Footer.css";
 import logoFooter from "../assets/logo-footer.png";
 import instagram from "../assets/instagram-footer.png";
 import youtube from "../assets/youtube-footer.png";
