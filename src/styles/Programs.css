@@ -1,0 +1,142 @@
+/* ==========================================
+   PROGRAMAS
+========================================== */
+
+.programs {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 35px 40px 40px;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.program-card {
+  overflow: hidden;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(8, 27, 60, 0.1);
+}
+
+.program-card > img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.program-content {
+  position: relative;
+  padding: 22px 22px 26px;
+}
+
+.program-content h3 {
+  font-size: 20px;
+  color: #081b3c;
+}
+
+.program-content p {
+  margin-top: 12px;
+  padding-right: 28px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #475569;
+}
+
+.program-content button {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* ==========================================
+   RESPONSIVE PROGRAMAS
+========================================== */
+
+@media (max-width: 900px) {
+  .programs {
+    width: 100%;
+    max-width: 100%;
+    padding: 26px 20px 34px;
+    overflow: hidden;
+  }
+
+  .programs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .program-card {
+    width: 100%;
+    max-width: 340px;
+    min-height: 115px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 12px 32px rgba(8, 27, 60, 0.08);
+  }
+
+  .program-card > img {
+    width: 46%;
+    height: auto;
+    min-height: 115px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .program-content {
+    flex: 1;
+    position: relative;
+
+    padding: 14px 42px 14px 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .program-content h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #081b3c;
+  }
+
+  .program-content p {
+    margin-top: 8px;
+    padding-right: 0;
+    font-size: 10px;
+    line-height: 1.35;
+    color: #475569;
+  }
+
+  .program-content button {
+    width: 30px;
+    height: 30px;
+
+    right: 12px;
+    bottom: 50%;
+    transform: translateY(50%);
+
+    font-size: 14px;
+  }
+}

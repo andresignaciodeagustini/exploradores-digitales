@@ -1,0 +1,215 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7fafb;
+}
+
+
+/* SECCIONES GENERALES */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  color: #081b3c;
+  letter-spacing: -1px;
+}
+
+.section-heading h2 span {
+  color: #14b8b8;
+}
+
+.section-heading p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #475569;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .logo img {
+    height: 62px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .cta-navbar {
+    width: 170px;
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px 60px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 48px;
+  }
+
+  .hero-left p {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-data {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-divider {
+    display: none;
+  }
+
+  .about,
+  .programs,
+  .events-section,
+  .age-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-grid,
+  .programs-grid,
+  .age-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    gap: 28px;
+  }
+
+  .about-card {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card:not(:last-child)::after {
+    display: none;
+  }
+
+  .section-heading h2,
+  .age-section > h2 {
+    font-size: 30px;
+  }
+
+  .events-banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 34px 22px;
+  }
+
+  .events-content {
+    min-width: auto;
+  }
+
+  .events-content h2 {
+    font-size: 31px;
+  }
+
+  .events-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .events-photo {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .events-chat {
+    width: 64px;
+    height: 64px;
+    margin-top: 0;
+  }
+
+  .events-banner::before {
+    left: 32px;
+    bottom: 32px;
+  }
+
+  .events-banner::after {
+    left: auto;
+    right: 32px;
+    top: 32px;
+  }
+
+  .events-section::after {
+    display: none;
+  }
+
+  .age-card {
+    min-height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 24px 0;
+    overflow: hidden;
+  }
+
+  .junior-card,
+  .advanced-card {
+    padding: 30px 24px 0;
+  }
+
+  .junior-character,
+  .advanced-character {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 220px;
+    margin-top: 20px;
+  }
+
+  .advanced-card {
+    flex-direction: column;
+  }
+
+  .age-icons {
+    justify-content: center;
+  }
+ 
+
+  .footer {
+    padding: 28px 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 210px;
+  }
+
+  .footer-social div {
+    justify-content: center;
+
+      }
+  }  

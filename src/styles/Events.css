@@ -1,0 +1,255 @@
+/* EVENTOS */
+
+.events-section {
+  position: relative;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px 28px;
+}
+
+.events-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #08a9a9, #11c5bd);
+
+  display: grid;
+  grid-template-columns: 118px 430px 1fr 86px;
+  align-items: center;
+  gap: 28px;
+  padding: 34px 50px;
+
+  box-shadow: 0 18px 45px rgba(8, 27, 60, 0.12);
+}
+
+.events-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  z-index: 2;
+  margin-top: -75%;
+}
+
+.events-content {
+  color: white;
+  min-width: 0;
+  z-index: 2;
+}
+
+.events-content h2 {
+  font-size: 34px;
+  line-height: 1;
+  color: white;
+  margin: 0;
+}
+
+.events-content h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  color: white;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 10px 34px;
+  margin-top: 22px;
+}
+
+.events-list p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.events-content button {
+  margin-top: 20px;
+  background: #ffd13d;
+  color: #07172f;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.events-photo {
+  height: 220px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  justify-self: center;
+  z-index: 2;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  filter: none;
+}
+
+.events-chat {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  justify-self: end;
+  align-self: start;
+  margin-top: 15px;
+  position: static;
+  z-index: 3;
+  margin-right: 20px;
+}
+
+/* 3 bloques de 9 puntitos */
+
+.events-banner::before,
+.events-banner::after,
+.events-section::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.55) 2px,
+    transparent 2px
+  );
+  background-size: 24px 24px;
+  background-position: 0 0;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.events-banner::before {
+  left: 60px;
+  bottom: 34px;
+}
+
+.events-banner::after {
+  left: 570px;
+  top: 40px;
+}
+
+.events-section::after {
+  right: 70px;
+  top: 175px;
+}
+
+/* RESPONSIVE EVENTOS */
+
+@media (max-width: 900px) {
+  .events-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px 34px;
+    overflow: hidden;
+  }
+
+  .events-section::before {
+    content: "Eventos presenciales";
+    display: block;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #081b3c;
+  }
+
+  .events-banner {
+    width: 100%;
+    max-width: 360px;
+    min-height: auto;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    grid-template-areas:
+      "icon title"
+      "list photo"
+      "button button";
+
+    align-items: center;
+    gap: 14px 14px;
+    padding: 20px 18px 18px;
+
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .events-icon {
+    grid-area: icon;
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    justify-self: start;
+  }
+
+  .events-content {
+    display: contents;
+  }
+
+  .events-content h2 {
+    display: none;
+  }
+
+  .events-content h3 {
+    grid-area: title;
+    margin: 0;
+    max-width: 220px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: white;
+    text-align: left;
+  }
+
+  .events-list {
+    grid-area: list;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .events-list p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+  }
+
+  .events-photo {
+    grid-area: photo;
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+    margin: 0;
+    justify-self: end;
+  }
+
+  .events-content button {
+    grid-area: button;
+    width: 100%;
+    max-width: 100%;
+    margin: 8px 0 0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .events-chat {
+    display: none;
+  }
+
+  .events-banner::before,
+  .events-banner::after,
+  .events-section::after {
+    display: none;
+  }
+}

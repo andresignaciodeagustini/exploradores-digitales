@@ -1,0 +1,213 @@
+/* PARA QUIÉNES */
+
+.age-section {
+  max-width: 1320px;
+  margin: 0 auto 50px;
+  padding: 0 40px 70px;
+}
+
+.age-section > h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #081b3c;
+  margin-bottom: 18px;
+}
+
+.age-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.age-card {
+  position: relative;
+  overflow: visible;
+  min-height: 210px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.junior-card {
+  background: linear-gradient(135deg, #dffafa, #eefefe);
+  padding: 16px 34px 16px 255px;
+}
+
+.advanced-card {
+  background: linear-gradient(135deg, #f0edff, #faf8ff);
+  padding: 16px 245px 16px 46px;
+}
+
+.age-character {
+  position: absolute;
+  object-fit: contain;
+  z-index: 5;
+}
+
+.junior-character {
+  width: 200px;
+  left: 34px;
+  bottom: -4px;
+}
+
+.advanced-character {
+  width: 165px;
+  right: 34px;
+  bottom: -4px;
+}
+
+.age-content {
+  z-index: 3;
+}
+
+.age-content h3 {
+  font-size: 28px;
+  line-height: 1.05;
+  color: #14b8b8;
+}
+
+.advanced-card .age-content h3 {
+  color: #6d5dfc;
+}
+
+.age-content span {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: #14b8b8;
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.advanced-card .age-content span {
+  background: #6d5dfc;
+}
+
+.age-content p {
+  margin-top: 14px;
+  max-width: 310px;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #243b5a;
+}
+
+.age-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 18px;
+}
+
+.age-icons img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+/* RESPONSIVE PARA QUIÉNES */
+
+@media (max-width: 900px) {
+  .age-section {
+      width: 100%;
+  max-width: 100%;
+  margin: 40px auto 34px;
+  padding: 0 20px 44px;
+  overflow: visible;
+  }
+
+  .age-section > h2 {
+    font-size: 26px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+  }
+
+  .age-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .age-card,
+  .junior-card,
+  .advanced-card {
+    width: 100%;
+    max-width: 340px;
+    min-height: 230px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-align: left;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .junior-card {
+    padding: 18px 18px 18px 150px;
+  }
+
+  .advanced-card {
+    padding: 18px 145px 18px 18px;
+  }
+
+  .age-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+  }
+
+  .age-content h3 {
+    font-size: 21px;
+    line-height: 1.1;
+  }
+
+  .age-content span {
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+  }
+
+  .age-content p {
+    max-width: 150px;
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .age-icons {
+    gap: 12px;
+    margin-top: 14px;
+    justify-content: flex-start;
+  }
+
+  .age-icons img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .age-character,
+  .junior-character,
+  .advanced-character {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  .junior-character {
+    width: 135px;
+    left: 16px;
+    bottom: 14px;
+  }
+
+  .advanced-character {
+    width: 110px;
+    right: 16px;
+    bottom: 0;
+  }
+}
