@@ -1,5 +1,5 @@
 import "./App.css";
-import "./styles/Responsive.css";
+
 
 
 import Navbar from "./components/Navbar";

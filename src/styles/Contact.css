@@ -179,6 +179,94 @@
   display: block;
   max-width: 150px;
 }
+/* ==========================================
+   CONTACTO TABLET
+========================================== */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contact-section {
+    padding: 0 28px;
+    margin: 20px auto 60px auto;
+  }
+
+  .contact-box {
+    padding: 28px;
+    gap: 22px;
+    grid-template-columns: 330px 1px minmax(0, 1fr);
+    align-items: center;
+  }
+
+  .contact-info {
+    gap: 16px;
+  }
+
+  .contact-main-icon {
+    width: 74px;
+    height: 74px;
+  }
+
+  .contact-text h2 {
+    font-size: 40px;
+    margin-top: -6%;
+   margin-bottom: 11%;
+    }
+  }
+
+  .contact-text p {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .contact-line span {
+    font-size: 13px;
+  }
+
+  .contact-divider {
+    height: 130px;
+  }
+
+  .contact-inputs-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 12px;
+}
+
+.contact-inputs-row input:nth-child(3) {
+  grid-column: 1 / span 2;
+}
+
+  .contact-inputs-row input {
+    height: 46px;
+    font-size: 13px;
+  }
+
+  .contact-bottom-row {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contact-bottom-row textarea {
+    height: 72px;
+    font-size: 13px;
+  }
+
+  .contact-bottom-row button {
+    width: 100%;
+    height: 54px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .contact-bottom-row button span {
+    max-width: none;
+  }
+
+  .contact-bottom-row button img {
+    width: 20px;
+    height: 20px;
+  }
 
 /* CONTACTO MOBILE */
 

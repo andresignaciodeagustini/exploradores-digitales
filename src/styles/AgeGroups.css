@@ -106,8 +106,80 @@
   object-fit: contain;
 }
 /* RESPONSIVE PARA QUIÉNES */
+/* ==========================================
+   TABLET PARA QUIÉNES
+========================================== */
 
-@media (max-width: 900px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .age-section {
+    padding: 0 28px 60px;
+  }
+
+  .age-section > h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+  }
+
+  .age-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .age-card {
+    min-height: 190px;
+    border-radius: 22px;
+  }
+
+  .junior-card {
+    padding: 16px 24px 16px 190px;
+  }
+
+  .advanced-card {
+    padding: 16px 190px 16px 30px;
+  }
+
+  .junior-character {
+    width: 200px;
+    left: -4px;
+    bottom: -4px;
+  }
+
+  .advanced-character {
+    width: 152px;
+    right: 35px;
+    bottom: -4px;
+  }
+
+  .age-content h3 {
+    font-size: 24px;
+  }
+
+  .age-content span {
+    margin-top: 8px;
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  .age-content p {
+    max-width: 250px;
+    margin-top: 12px;
+    font-size: 15px;
+  }
+
+  .age-icons {
+    gap: 18px;
+    margin-top: 14px;
+  }
+
+  .age-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
   .age-section {
       width: 100%;
   max-width: 100%;

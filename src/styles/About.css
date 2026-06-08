@@ -55,8 +55,50 @@
 }
 
 /* RESPONSIVE ABOUT */
+/* ==========================================
+   TABLET ABOUT
+========================================== */
 
-@media (max-width: 900px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .about {
+    padding: 35px 28px 50px;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .about-card {
+    padding: 0 18px;
+    gap: 18px;
+  }
+
+  .about-card:not(:last-child)::after {
+    top: 12px;
+    height: 75px;
+  }
+
+  .about-card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .about-card h3 {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .about-card p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+}
+
+@media (max-width: 768px) {
   .about {
     width: 100%;
     max-width: 100%;

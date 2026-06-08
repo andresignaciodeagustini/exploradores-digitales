@@ -63,8 +63,54 @@
 /* ==========================================
    RESPONSIVE PROGRAMAS
 ========================================== */
+/* ==========================================
+   TABLET PROGRAMAS
+========================================== */
 
-@media (max-width: 900px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .programs {
+    padding: 35px 28px 40px;
+  }
+
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .program-card {
+    border-radius: 20px;
+  }
+
+  .program-card > img {
+    height: 220px;
+  }
+
+  .program-content {
+    padding: 20px 20px 24px;
+  }
+
+  .program-content h3 {
+    font-size: 22px;
+  }
+
+  .program-content p {
+    margin-top: 10px;
+    padding-right: 40px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .program-content button {
+    width: 38px;
+    height: 38px;
+    right: 18px;
+    bottom: 22px;
+  }
+
+}
+
+@media (max-width: 768px) {
   .programs {
     width: 100%;
     max-width: 100%;

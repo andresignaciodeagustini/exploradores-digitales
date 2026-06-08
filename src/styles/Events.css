@@ -136,8 +136,115 @@
 }
 
 /* RESPONSIVE EVENTOS */
+/* ==========================================
+   TABLET EVENTOS
+========================================== */
 
-@media (max-width: 900px) {
+/* ==========================================
+   TABLET EVENTOS
+========================================== */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .events-section {
+    padding: 0 28px 32px;
+  }
+
+  .events-banner {
+    min-height: 230px;
+    border-radius: 26px;
+    grid-template-columns: 78px 390px minmax(220px, 1fr) 54px;
+    gap: 14px;
+    padding: 28px 24px;
+  }
+
+  .events-icon {
+    width: 78px;
+    height: 78px;
+    margin-top: -119%;
+  }
+
+  .events-content {
+    justify-self: start;
+    text-align: left;
+    width: 100%;
+  }
+
+  .events-content h2 {
+    font-size: 27px;
+    text-align: left;
+  }
+
+  .events-content h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .events-list {
+    display: grid;
+    grid-template-columns: 190px 160px;
+    column-gap: 22px;
+    row-gap: 10px;
+    margin-top: 20px;
+    justify-content: start;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .events-list p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .events-content button {
+    display: block;
+    margin: 18px 0 0 0;
+    padding: 12px 22px;
+    border-radius: 11px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .events-photo {
+    height: 125px;
+    justify-self: center;
+    margin-top: 36%;
+    margin-left: -49%;
+  }
+
+  .events-chat {
+  position: absolute;
+  display: block;
+
+  width: 54px;
+  height: 54px;
+
+  top: 35px;
+  right: 20px;
+
+  z-index: 50;
+}
+
+  .events-banner::before {
+    left: 25px;
+    bottom: 28px;
+  }
+
+  .events-banner::after {
+    left: 430px;
+    top: 26px;
+  }
+
+  .events-section::after {
+    right: 48px;
+    top: 155px;
+  }
+}
+
+@media (max-width: 768px) {
   .events-section {
     width: 100%;
     max-width: 100%;
@@ -226,7 +333,7 @@
   .events-photo {
     grid-area: photo;
     width: 100%;
-    max-width: 175px;
+    max-width: 209px;
     height: auto;
     margin: 0;
     justify-self: end;
@@ -244,8 +351,17 @@
   }
 
   .events-chat {
-    display: none;
-  }
+  display: block;
+  position: absolute;
+
+  width: 46px;
+  height: 72px;
+
+  top: 18px;
+  right: -2px;
+
+  z-index: 50;
+}
 
   .events-banner::before,
   .events-banner::after,

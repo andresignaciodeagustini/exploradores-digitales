@@ -32,8 +32,9 @@ function Contact() {
         <form className="contact-form">
           <div className="contact-inputs-row">
             <input type="text" placeholder="Nombre" />
-            <input type="email" placeholder="Email" />
             <input type="tel" placeholder="Teléfono" />
+            <input type="email" placeholder="Email" />
+            
           </div>
 
           <div className="contact-bottom-row">

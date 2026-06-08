@@ -83,10 +83,45 @@
 .menu-toggle {
   display: none;
 }
+/* ==========================================
+   NAVBAR TABLET
+========================================== */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .navbar {
+    padding: 18px 28px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .cta-navbar {
+    width: 135px;
+    height: 43px;
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .cta-navbar img {
+    width: 18px;
+    height: 18px;
+  }
+
+}
 
 /* MOBILE NAVBAR */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .navbar {
     width: 100%;
     max-width: 100%;
