@@ -11,6 +11,23 @@ function Navbar() {
     setMenuOpen(false);
   };
 
+  const reservarLugar = () => {
+    const mensaje = document.getElementById(
+      "mensaje"
+    ) as HTMLTextAreaElement | null;
+
+    if (mensaje && !mensaje.value.trim()) {
+      mensaje.value =
+        "Hola, estoy interesado/a en recibir información sobre Exploradores Digitales.";
+    }
+
+    document
+      .getElementById("contacto")
+      ?.scrollIntoView({ behavior: "smooth" });
+
+    setMenuOpen(false);
+  };
+
   return (
     <header className="navbar">
       <a href="#inicio" className="logo" onClick={closeMenu}>
@@ -52,10 +69,14 @@ function Navbar() {
         </a>
       </nav>
 
-      <a href="#contacto" className="cta-navbar" onClick={closeMenu}>
+      <button
+        type="button"
+        className="cta-navbar"
+        onClick={reservarLugar}
+      >
         <span>Reservar lugar</span>
         <img src={botonIcon} alt="Calendario" />
-      </a>
+      </button>
     </header>
   );
 }

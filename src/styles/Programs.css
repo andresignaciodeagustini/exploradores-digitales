@@ -30,7 +30,7 @@
 
 .program-content {
   position: relative;
-  padding: 22px 22px 26px;
+  padding: 22px 22px 70px;
 }
 
 .program-content h3 {
@@ -44,6 +44,15 @@
   font-size: 15px;
   line-height: 1.45;
   color: #475569;
+}
+
+.program-extra {
+  margin-top: 14px !important;
+  padding-right: 18px !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #081b3c !important;
+  animation: fadeIn 0.25s ease;
 }
 
 .program-content button {
@@ -61,14 +70,26 @@
 }
 
 /* ==========================================
-   RESPONSIVE PROGRAMAS
+   ANIMACIÓN
 ========================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ==========================================
    TABLET PROGRAMAS
 ========================================== */
 
 @media (min-width: 769px) and (max-width: 1200px) {
-
   .programs {
     padding: 35px 28px 40px;
   }
@@ -87,7 +108,7 @@
   }
 
   .program-content {
-    padding: 20px 20px 24px;
+    padding: 20px 20px 68px;
   }
 
   .program-content h3 {
@@ -101,14 +122,24 @@
     line-height: 1.45;
   }
 
+  .program-extra {
+    margin-top: 14px !important;
+    padding-right: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
   .program-content button {
     width: 38px;
     height: 38px;
     right: 18px;
     bottom: 22px;
   }
-
 }
+
+/* ==========================================
+   MOBILE PROGRAMAS
+========================================== */
 
 @media (max-width: 768px) {
   .programs {
@@ -175,13 +206,21 @@
     color: #475569;
   }
 
+  .program-extra {
+    margin-top: 8px !important;
+    padding-right: 0 !important;
+    font-size: 9px !important;
+    line-height: 1.35 !important;
+  }
+
   .program-content button {
     width: 30px;
     height: 30px;
 
     right: 12px;
-    bottom: 50%;
-    transform: translateY(50%);
+    top: 14px;
+    bottom: auto;
+    transform: none;
 
     font-size: 14px;
   }

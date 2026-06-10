@@ -7,6 +7,27 @@ import icono3 from "../assets/icono3home.png";
 import "../styles/Hero.css";
 
 function Hero() {
+  const scrollToCursos = () => {
+    document
+      .getElementById("cursos")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const reservarLugar = () => {
+    const mensaje = document.getElementById(
+      "mensaje"
+    ) as HTMLTextAreaElement | null;
+
+    if (mensaje && !mensaje.value.trim()) {
+      mensaje.value =
+        "Hola, estoy interesado/a en recibir información sobre Exploradores Digitales.";
+    }
+
+    document
+      .getElementById("contacto")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="inicio" className="hero">
       <div className="hero-left">
@@ -22,9 +43,19 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">Reservar lugar</button>
+          <button
+            className="primary-btn"
+            onClick={reservarLugar}
+          >
+            Reservar lugar
+          </button>
 
-          <button className="secondary-btn">Ver cursos</button>
+          <button
+            className="secondary-btn"
+            onClick={scrollToCursos}
+          >
+            Ver cursos
+          </button>
         </div>
 
         <div className="hero-data">

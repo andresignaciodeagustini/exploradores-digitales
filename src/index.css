@@ -8,6 +8,9 @@ body {
   font-family: Inter, Arial, sans-serif;
   background: #f7fafb;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 button {
   font-family: inherit;

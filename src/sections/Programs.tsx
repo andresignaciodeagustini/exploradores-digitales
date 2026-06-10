@@ -15,6 +15,7 @@ function Programs() {
             key={program.title}
             title={program.title}
             description={program.description}
+            extra={program.extra}
             image={program.image}
             color={program.color}
           />

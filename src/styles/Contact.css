@@ -179,6 +179,12 @@
   display: block;
   max-width: 150px;
 }
+.contact-status {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #14b8b8;
+}
 /* ==========================================
    CONTACTO TABLET
 ========================================== */
