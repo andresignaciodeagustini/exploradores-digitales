@@ -73,11 +73,21 @@
   display: block;
 }
 
-.contact-line span {
+.contact-line span,
+.contact-link {
   font-size: 16px;
   font-weight: 700;
   color: #6d5dfc;
   white-space: nowrap;
+}
+
+.contact-link {
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.contact-link:hover {
+  opacity: 0.75;
 }
 
 .contact-divider {
@@ -179,12 +189,14 @@
   display: block;
   max-width: 150px;
 }
+
 .contact-status {
   margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
   color: #14b8b8;
 }
+
 /* ==========================================
    CONTACTO TABLET
 ========================================== */
@@ -214,8 +226,7 @@
   .contact-text h2 {
     font-size: 40px;
     margin-top: -6%;
-   margin-bottom: 11%;
-    }
+    margin-bottom: 11%;
   }
 
   .contact-text p {
@@ -223,7 +234,8 @@
     margin-bottom: 12px;
   }
 
-  .contact-line span {
+  .contact-line span,
+  .contact-link {
     font-size: 13px;
   }
 
@@ -232,14 +244,14 @@
   }
 
   .contact-inputs-row {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 12px;
-}
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 12px;
+  }
 
-.contact-inputs-row input:nth-child(3) {
-  grid-column: 1 / span 2;
-}
+  .contact-inputs-row input:nth-child(3) {
+    grid-column: 1 / span 2;
+  }
 
   .contact-inputs-row input {
     height: 46px;
@@ -273,8 +285,11 @@
     width: 20px;
     height: 20px;
   }
+}
 
-/* CONTACTO MOBILE */
+/* ==========================================
+   CONTACTO MOBILE
+========================================== */
 
 @media (max-width: 768px) {
   .contact-section {
@@ -313,7 +328,7 @@
   .contact-text h2 {
     font-size: 23px;
     line-height: 1.15;
-   margin-left: -7%;
+    margin-left: -7%;
   }
 
   .contact-text p {
@@ -325,7 +340,6 @@
     justify-content: flex-start;
     gap: 8px;
     margin-top: 10px;
-    
   }
 
   .contact-line img {
@@ -333,7 +347,8 @@
     height: 13px;
   }
 
-  .contact-line span {
+  .contact-line span,
+  .contact-link {
     font-size: 11px;
     font-weight: 600;
     color: #081b3c;

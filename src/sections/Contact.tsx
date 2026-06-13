@@ -56,12 +56,24 @@ function Contact() {
 
             <div className="contact-line">
               <img src={contactEmail} alt="Email" />
-              <span>info@exploradoresdigitales.com</span>
+              <a
+                href="mailto:info@exploradoresdigitales.com"
+                className="contact-link"
+              >
+                info@exploradoresdigitales.com
+              </a>
             </div>
 
             <div className="contact-line">
               <img src={contactInstagram} alt="Instagram" />
-              <span>@exploradoresdigitales</span>
+              <a
+                href="https://www.instagram.com/exploradoresdigitalesargentina/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
+                @exploradoresdigitalesargentina
+              </a>
             </div>
           </div>
         </div>
@@ -88,26 +100,11 @@ function Contact() {
           />
 
           <div className="contact-inputs-row">
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-              required
-            />
+            <input type="text" name="nombre" placeholder="Nombre" required />
 
-            <input
-              type="tel"
-              name="telefono"
-              placeholder="Teléfono"
-              required
-            />
+            <input type="tel" name="telefono" placeholder="Teléfono" required />
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
+            <input type="email" name="email" placeholder="Email" required />
           </div>
 
           <div className="contact-bottom-row">
@@ -121,18 +118,12 @@ function Contact() {
             <button type="submit" disabled={sending}>
               <img src={sendIcon} alt="" />
               <span>
-                {sending
-                  ? "Enviando..."
-                  : "Quiero más información"}
+                {sending ? "Enviando..." : "Quiero más información"}
               </span>
             </button>
           </div>
 
-          {status && (
-            <p className="contact-status">
-              {status}
-            </p>
-          )}
+          {status && <p className="contact-status">{status}</p>}
         </form>
       </div>
     </section>
