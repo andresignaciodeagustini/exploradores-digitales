@@ -20,11 +20,13 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="footer-inner">
-          <img
-            className="footer-logo"
-            src={logoFooter}
-            alt="Exploradores Digitales"
-          />
+          <a href="#inicio" className="footer-logo-link" aria-label="Volver al inicio">
+            <img
+              className="footer-logo"
+              src={logoFooter}
+              alt="Exploradores Digitales"
+            />
+          </a>
 
           <div className="footer-center">
             <h3>Aprendemos jugando, creamos sin límites.</h3>
@@ -43,46 +45,31 @@ function Footer() {
                 <img src={instagram} alt="Instagram" />
               </a>
 
-              <img
-                src={youtube}
-                alt="YouTube"
-                onClick={openComingSoon}
-              />
+              <img src={youtube} alt="YouTube" onClick={openComingSoon} />
 
-              <img
-                src={tiktok}
-                alt="TikTok"
-                onClick={openComingSoon}
-              />
+              <img src={tiktok} alt="TikTok" onClick={openComingSoon} />
             </div>
           </div>
         </div>
       </footer>
 
       {showModal && (
-        <div
-          className="social-modal-overlay"
-          onClick={closeComingSoon}
-        >
+        <div className="social-modal-overlay" onClick={closeComingSoon}>
           <div
             className="social-modal"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="social-modal-icon">
-              🚀
-            </div>
+            <div className="social-modal-icon">🚀</div>
 
             <h3>¡Estamos creciendo!</h3>
 
             <p>
-              Nuestros canales de YouTube y TikTok
-              están en construcción.
+              Nuestros canales de YouTube y TikTok están en construcción.
             </p>
 
             <p>
-              Muy pronto compartiremos tutoriales,
-              proyectos, desafíos y contenido creado
-              por nuestros Exploradores Digitales.
+              Muy pronto compartiremos tutoriales, proyectos, desafíos y
+              contenido creado por nuestros Exploradores Digitales.
             </p>
 
             <div className="social-modal-buttons">
@@ -95,10 +82,7 @@ function Footer() {
                 Seguir en Instagram
               </a>
 
-              <button
-                className="social-close-btn"
-                onClick={closeComingSoon}
-              >
+              <button className="social-close-btn" onClick={closeComingSoon}>
                 Cerrar
               </button>
             </div>

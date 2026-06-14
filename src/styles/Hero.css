@@ -3,6 +3,7 @@
 ========================================== */
 
 .hero {
+   scroll-margin-top: 135px;
   max-width: 1320px;
   margin: 0 auto;
   min-height: calc(100vh - 120px);
