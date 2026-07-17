@@ -10,6 +10,7 @@ import Events from "./sections/Events";
 import AgeGroups from "./sections/AgeGroups";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <AgeGroups />
       <Contact />
       <Footer />
+
+      <WhatsAppButton />
     </div>
   );
 }

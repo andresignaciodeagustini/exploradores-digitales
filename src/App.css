@@ -29,6 +29,46 @@
 }
 
 
+/* BOTÓN FLOTANTE DE WHATSAPP */
+
+.whatsapp-button {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.whatsapp-button img {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-button:active {
+  transform: scale(0.96);
+}
+
+
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
@@ -192,7 +232,6 @@
   .age-icons {
     justify-content: center;
   }
- 
 
   .footer {
     padding: 28px 20px;
@@ -210,6 +249,24 @@
 
   .footer-social div {
     justify-content: center;
+  }
 
-      }
-  }  
+  .whatsapp-button {
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    width: 48px;
+    height: 48px;
+
+    border: 3px solid #ffffff;
+    box-shadow: 0 5px 16px rgba(8, 27, 60, 0.22);
+  }
+
+  .whatsapp-button img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .whatsapp-button:hover {
+    transform: none;
+  }
+}
