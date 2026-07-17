@@ -252,8 +252,8 @@
   }
 
   .whatsapp-button {
-    right: 12px;
-    bottom: calc(12px + env(safe-area-inset-bottom));
+    right: 14px;
+    bottom: calc(78px + env(safe-area-inset-bottom));
     width: 48px;
     height: 48px;
 
